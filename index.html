@@ -795,13 +795,15 @@ function toggleSound() {
 }
 
 /* ---------- Firebase Cloud Sync (GitHub Pages) ---------- */
+
 const FIREBASE_CONFIG = {
-  apiKey: "AIzaSyA8ClLnhf38osSntFOFqqQkehK01QG3GaJc",
+  apiKey: "AIzaSyA8cLNhf38osSntFOFqgQkehK01QG3GaJc",
   authDomain: "encore-app-8d75b.firebaseapp.com",
   projectId: "encore-app-8d75b",
   storageBucket: "encore-app-8d75b.firebasestorage.app",
   messagingSenderId: "760007635493",
-  appId: "1:760007635493:web:8fe5ae04ba8ff89cbec5cc"
+  appId: "1:760007635493:web:8fe5ae04ba8ff89cbec5cc",
+  measurementId: "G-SQM12VG7T8"
 };
 let firebaseAuth = null, firebaseStore = null, signedUser = null, cloudListeners = [];
 function cloudRoot() { return firebaseStore.collection('users').doc(signedUser.uid); }
